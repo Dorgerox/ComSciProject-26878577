@@ -52,7 +52,7 @@ class MyListener(StreamListener):
                     if len(cleanTweet.split()) > 2:
                         print(cleanTweet)
                         # After it has been pre-processed, pass the tweet to the verification module
-                        classification = Verify.verification(cleanTweet.capitalize())
+                        classification = Verify.verification(cleanTweet)
                         print(classification)
                         # Only care about the tweets that are classified as pos
                         if classification == 'pos':
