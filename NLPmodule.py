@@ -1,7 +1,13 @@
 import pickle
 from nltk.classify import ClassifierI
 from statistics import mode
-
+"""
+This module was based off a tutorial that can be found at this link:
+https://pythonprogramming.net/combine-classifier-algorithms-nltk-tutorial/
+This tutorial describes how to create a sentiment analysis system using Twitter data.
+This incorporates creating, training and loading classifiers to be used.
+The tutorial describes a Voting class which I use below aswell
+"""
 # This class is used to classify a tweet using all of the classifiers
 class VoteClassifier(ClassifierI):
     def __init__(self, *classifiers):
