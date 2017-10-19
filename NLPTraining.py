@@ -2,7 +2,12 @@ import nltk
 import random
 import pickle
 from nltk.corpus import stopwords
-
+"""
+This module was based off a tutorial that can be found at this link:
+https://pythonprogramming.net/combine-classifier-algorithms-nltk-tutorial/
+This tutorial describes how to create a sentiment analysis system using Twitter data.
+This incorporates creating, training and loading classifiers to be used.
+"""
 
 # Initialises all need variables
 f = open("trainingdata.txt", 'r')
